@@ -65,7 +65,7 @@ class Play extends Component{
     }
     handlequit =()=>{
         if(window.confirm('Are you sure want to Quit?')){
-            this.props.history.push('/');
+            this.props.history.push('/online-quiz');
         }
     }
     handlenextQuestion= ()=>{
