@@ -65,7 +65,7 @@ class Play extends Component{
     }
     handlequit =()=>{
         if(window.confirm('Are you sure want to Quit?')){
-            this.props.history.push('/');
+            this.props.history.push('/sudeepthinittala/online-quiz/home');
         }
     }
     handlenextQuestion= ()=>{
@@ -129,7 +129,7 @@ class Play extends Component{
         };
         // console.log(playerStats);
         setTimeout(()=>{
-            this.props.history.push("/play/quizSummary",playerStats);
+            this.props.history.push("/sudeepthinittala/online-quiz/play/quizSummary",playerStats);
         },1000);
     }
     render(){

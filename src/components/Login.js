@@ -30,7 +30,7 @@ const Login =()=>{
                 <span className="tr"><input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)}/></span>
                
             {/* </table> */}
-            <Link to={validateForm()?{ pathname:"/play/instructions/",aboutProps:{text}} : {pathname:"/login"}}  className="submit-button"  type="submit" value="submit" >Submit</Link>
+            <Link to={validateForm()?{ pathname:"/sudeepthinittala/online-quiz/play/instructions/",aboutProps:{text}} : {pathname:"/sudeepthinittala/online-quiz/login"}}  className="submit-button"  type="submit" value="submit" >Submit</Link>
             </form>
             {/* <ReactToExcel
                 table="table"

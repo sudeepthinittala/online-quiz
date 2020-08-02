@@ -10,12 +10,12 @@ import Register from './components/Register';
 function App() {
   return (
     <Router>
-      <Route path="/home"  component={Home}/>
-      <Route path="/play/instructions"  component={QuizInstructions}/>
-      <Route path="/play/quiz" component={Play}/>
-      <Route path="/play/quizSummary"  component={QuizSummary}/>
-      <Route path="/login"  component={Login}/>
-      <Route path="/register"  component={Register}/>
+      <Route path="/sudeepthinittala/online-quiz/home"  component={Home}/>
+      <Route path="/sudeepthinittala/online-quiz/play/instructions"  component={QuizInstructions}/>
+      <Route path="/sudeepthinittala/online-quiz/play/quiz" component={Play}/>
+      <Route path="/sudeepthinittala/online-quiz/play/quizSummary"  component={QuizSummary}/>
+      <Route path="/sudeepthinittala/online-quiz/login"  component={Login}/>
+      <Route path="/sudeepthinittala/online-quiz/register"  component={Register}/>
     </Router>
   );
 }

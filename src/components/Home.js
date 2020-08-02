@@ -14,7 +14,7 @@ const Home = () => {
                    <div className="play-button-container">
                        <ul>
                            <li >
-                               <Link className="play-button" to={{pathname:"/play/instructions/",aboutProps:{text:"User"}}} >
+                               <Link className="play-button" to={{pathname:"/sudeepthinittala/online-quiz/play/instructions/",aboutProps:{text:"User"}}} >
                                    Play
                                </Link>
                            </li>
@@ -22,8 +22,8 @@ const Home = () => {
 
                    </div>
                    <div className="auth-container">
-                       <Link className="auth-buttons" id="login-button" to="/login">Login</Link>
-                       <Link  className="auth-buttons" id="signup-button" to="/register">Register</Link>
+                       <Link className="auth-buttons" id="login-button" to="/sudeepthinittala/online-quiz/login">Login</Link>
+                       <Link  className="auth-buttons" id="signup-button" to="/sudeepthinittala/online-quiz/register">Register</Link>
                    </div>
                </section>
            </div>

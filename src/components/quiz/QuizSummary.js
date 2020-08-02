@@ -57,8 +57,8 @@ import {Link} from 'react-router-dom';
                 
             </div>
             <section className="button-container">
-                <span><Link className="return-button"to="/">Return back</Link></span>
-                <span><Link className="play-button" to="/play/quiz">Play Again</Link></span>
+                <span><Link className="return-button"to="/sudeepthinittala/online-quiz/home">Return back</Link></span>
+                <span><Link className="play-button" to="/sudeepthinittala/online-quiz/play/quiz">Play Again</Link></span>
             </section>
             </Fragment>
            );
