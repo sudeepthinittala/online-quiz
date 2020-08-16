@@ -88,8 +88,8 @@ import {Link} from 'react-router-dom';
                 <span className="stat left"> Number of Wrong Answers:</span>
                 <span className="stat right"> {this.state.wrongAnswers}</span><br></br>
                 <section className="button-container">
-                <span><Link className="return-button"to="/sudeepthinittala/online-quiz/home">Return back</Link></span>
-                <span><Link className="play-button" to={{pathname:"/sudeepthinittala/online-quiz/play/quiz" ,aboutProps:this.state.name}}>Play Again</Link></span>
+                <span><Link className="return-button"to="/online-quiz/home">Return back</Link></span>
+                <span><Link className="play-button" to={{pathname:"/online-quiz/play/quiz" ,aboutProps:this.state.name}}>Play Again</Link></span>
             </section>
                 
             </div>

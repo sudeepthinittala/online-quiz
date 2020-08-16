@@ -34,8 +34,8 @@ const QuizInstructions =(props)=>{
     <p>At last after completion of the quiz, score will be displayed as shown in the figure</p>
        <img src={img4} width="1000px" height="500px" alt="img"/>
     <div>
-        <span className="left"><Link to="/sudeepthinittala/online-quiz/home"> Take me back</Link></span>
-        <span className="right"><Link to= {{pathname:"/sudeepthinittala/online-quiz/play/quiz" ,aboutProps:obj.text}} > Next</Link></span>
+        <span className="left"><Link to="/online-quiz/home"> Take me back</Link></span>
+        <span className="right"><Link to= {{pathname:"/online-quiz/play/quiz" ,aboutProps:obj.text}} > Next</Link></span>
     </div>
     </div>
     </Fragment>
