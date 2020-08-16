@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sudeepthinittala/online-quiz/precache-manifest.3f692d5c811342da7e52df7e41c603c7.js"
+  "/sudeepthinittala/online-quiz/precache-manifest.3129457a8885aff80cebdbc762d5d5d3.js"
 );
 
 self.addEventListener('message', (event) => {

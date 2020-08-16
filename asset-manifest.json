@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/sudeepthinittala/online-quiz/static/css/main.0474359f.chunk.css",
-    "main.js": "/sudeepthinittala/online-quiz/static/js/main.ec9163c9.chunk.js",
-    "main.js.map": "/sudeepthinittala/online-quiz/static/js/main.ec9163c9.chunk.js.map",
+    "main.css": "/sudeepthinittala/online-quiz/static/css/main.4a6a2f3e.chunk.css",
+    "main.js": "/sudeepthinittala/online-quiz/static/js/main.5320573d.chunk.js",
+    "main.js.map": "/sudeepthinittala/online-quiz/static/js/main.5320573d.chunk.js.map",
     "runtime-main.js": "/sudeepthinittala/online-quiz/static/js/runtime-main.dccd3a6c.js",
     "runtime-main.js.map": "/sudeepthinittala/online-quiz/static/js/runtime-main.dccd3a6c.js.map",
-    "static/css/2.c5d15010.chunk.css": "/sudeepthinittala/online-quiz/static/css/2.c5d15010.chunk.css",
-    "static/js/2.f4518288.chunk.js": "/sudeepthinittala/online-quiz/static/js/2.f4518288.chunk.js",
-    "static/js/2.f4518288.chunk.js.map": "/sudeepthinittala/online-quiz/static/js/2.f4518288.chunk.js.map",
+    "static/css/2.2a110dac.chunk.css": "/sudeepthinittala/online-quiz/static/css/2.2a110dac.chunk.css",
+    "static/js/2.36dcf902.chunk.js": "/sudeepthinittala/online-quiz/static/js/2.36dcf902.chunk.js",
+    "static/js/2.36dcf902.chunk.js.map": "/sudeepthinittala/online-quiz/static/js/2.36dcf902.chunk.js.map",
     "index.html": "/sudeepthinittala/online-quiz/index.html",
-    "precache-manifest.3f692d5c811342da7e52df7e41c603c7.js": "/sudeepthinittala/online-quiz/precache-manifest.3f692d5c811342da7e52df7e41c603c7.js",
+    "precache-manifest.3129457a8885aff80cebdbc762d5d5d3.js": "/sudeepthinittala/online-quiz/precache-manifest.3129457a8885aff80cebdbc762d5d5d3.js",
     "service-worker.js": "/sudeepthinittala/online-quiz/service-worker.js",
-    "static/css/2.c5d15010.chunk.css.map": "/sudeepthinittala/online-quiz/static/css/2.c5d15010.chunk.css.map",
-    "static/css/main.0474359f.chunk.css.map": "/sudeepthinittala/online-quiz/static/css/main.0474359f.chunk.css.map",
-    "static/js/2.f4518288.chunk.js.LICENSE.txt": "/sudeepthinittala/online-quiz/static/js/2.f4518288.chunk.js.LICENSE.txt",
+    "static/css/2.2a110dac.chunk.css.map": "/sudeepthinittala/online-quiz/static/css/2.2a110dac.chunk.css.map",
+    "static/css/main.4a6a2f3e.chunk.css.map": "/sudeepthinittala/online-quiz/static/css/main.4a6a2f3e.chunk.css.map",
+    "static/js/2.36dcf902.chunk.js.LICENSE.txt": "/sudeepthinittala/online-quiz/static/js/2.36dcf902.chunk.js.LICENSE.txt",
     "static/media/Screenshot (162).png": "/sudeepthinittala/online-quiz/static/media/Screenshot (162).77265175.png",
     "static/media/Screenshot (163).png": "/sudeepthinittala/online-quiz/static/media/Screenshot (163).141d3db5.png",
     "static/media/Screenshot (164).png": "/sudeepthinittala/online-quiz/static/media/Screenshot (164).82f90a6f.png",
@@ -24,9 +24,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dccd3a6c.js",
-    "static/css/2.c5d15010.chunk.css",
-    "static/js/2.f4518288.chunk.js",
-    "static/css/main.0474359f.chunk.css",
-    "static/js/main.ec9163c9.chunk.js"
+    "static/css/2.2a110dac.chunk.css",
+    "static/js/2.36dcf902.chunk.js",
+    "static/css/main.4a6a2f3e.chunk.css",
+    "static/js/main.5320573d.chunk.js"
   ]
 }
