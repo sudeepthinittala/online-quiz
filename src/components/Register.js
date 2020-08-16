@@ -7,7 +7,7 @@ const Register =()=>{
     const [password, setPassword] = useState("");
     const [retypepassword, retypesetPassword] = useState("");
     function validateForm() {
-        return text.length > 0 && password.length > 0;
+        return text.length > 0 && password.length > 0 && password===retypepassword;
       }
       const sendData = async e => {
         // e.preventDefault();
@@ -16,7 +16,7 @@ const Register =()=>{
         const message=password;
         try {
             const response = await fetch(
-                "https://v1.nocodeapi.com/sudeepthi/google_sheets/ogeeFOPybHOycAsN?tabId=Sheet1",
+                "https://v1.nocodeapi.com/sudeepthi/google_sheets/ogeeFOPybHOycAsN?tabId=UserData",
                 {
                     method: "post",
                     body: JSON.stringify([[name, newemail, message]]),
@@ -33,13 +33,13 @@ const Register =()=>{
             // setMessage("Error");
         }
         
-        // <Link to={validateForm()?{ pathname:"/play/instructions/",aboutProps:{text}} : {pathname:"/register"} } className="submit-button"   type="submit" value="Send" >Submit</Link>
+       
     };
     return (
         <Fragment>
             <Helmet><title>register page</title></Helmet>
             <h2>Register</h2>
-            <form className="login-container input-form" onClick={sendData()} id="contact" name="contact">
+            <form className="login-container input-form"  id="contact" name="contact">
             <label>
                 User Name:
                 <input type="text" value={text} onChange={e => setText(e.target.value)} name="name" />
@@ -50,8 +50,8 @@ const Register =()=>{
                 Retype Password: 
                 <input type="password" value={retypepassword} onChange={e => retypesetPassword(e.target.value)}name="password" />
             </label>
-            {/* <input  name="submit" type="submit" value="Send" /> */}
-            <Link to={sendData() && validateForm()?{ pathname:"/sudeepthinittala/online-quiz/play/instructions/",aboutProps:{text}} : {pathname:"/sudeepthinittala/online-quiz/register"} } className="submit-button"   type="submit" value="Send" >Submit</Link>
+           
+            <Link to={validateForm()?{ pathname:"/sudeepthinittala/online-quiz/play/instructions/",aboutProps:{text}} : {pathname:"/sudeepthinittala/online-quiz/register"} }   type="submit" value="Send" ><button className="button" onClick={validateForm && sendData}>Submit</button></Link>
             </form>
         </Fragment>
     );

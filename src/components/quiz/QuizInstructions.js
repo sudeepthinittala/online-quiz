@@ -10,9 +10,10 @@ import img4 from '../../assets/images/Screenshot (166).png'
 const QuizInstructions =(props)=>{
     const temp=JSON.stringify(props.location.aboutProps);
     const obj=JSON.parse(temp);
+    // console.log(props);
     return(
     <Fragment>
-    <Helmet><titl>Quiz Instructions</titl></Helmet>
+    <Helmet><title>Quiz Instructions</title></Helmet>
     <div className="instructions container">
       <h5>Hi! {obj.text}</h5>
         <h1>How to play the game</h1>
@@ -34,7 +35,7 @@ const QuizInstructions =(props)=>{
        <img src={img4} width="1000px" height="500px" alt="img"/>
     <div>
         <span className="left"><Link to="/sudeepthinittala/online-quiz/home"> Take me back</Link></span>
-        <span className="right"><Link to="/sudeepthinittala/online-quiz/play/quiz"> Next</Link></span>
+        <span className="right"><Link to= {{pathname:"/sudeepthinittala/online-quiz/play/quiz" ,aboutProps:obj.text}} > Next</Link></span>
     </div>
     </div>
     </Fragment>

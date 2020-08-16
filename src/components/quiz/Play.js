@@ -7,7 +7,10 @@ import Random from '../../utils/get-random';
 class Play extends Component{
     constructor(props){
         super(props);
+    const temp=JSON.stringify(props.location.aboutProps);
+    const obj=JSON.parse(temp);
         this.state={
+            name:obj,
             clicked:false,
            questions:questionsarr[Random()],
            currentQuestion:{},
@@ -21,6 +24,7 @@ class Play extends Component{
            correctAnswers:0,
            wrongAnswers:0
         };
+        // console.log(this.state.name);
     }
     componentDidMount(){
         const {questions,currentQuestion,nextQuestion,previousQuestion} = this.state;
@@ -65,7 +69,7 @@ class Play extends Component{
     }
     handlequit =()=>{
         if(window.confirm('Are you sure want to Quit?')){
-            this.props.history.push('/sudeepthinittala/online-quiz/home');
+            this.props.history.push('/sudeepthinittala/online-quiz/home/');
         }
     }
     handlenextQuestion= ()=>{
@@ -85,6 +89,36 @@ class Play extends Component{
     else{
         this.endGame();
     }   
+    }
+    sendData = async e => {
+        // e.preventDefault();
+        var status="";
+        // let {state}=this.props.location;
+        var sc=(this.state.score/this.state.numberOfQuestions)*100;
+        if(sc>=40){
+            status="pass";
+        }
+        else{
+            status="fail";
+        }
+        try {
+            const response = await fetch(
+                "https://v1.nocodeapi.com/sudeepthi/google_sheets/ogeeFOPybHOycAsN?tabId=Score",
+                {
+                    method: "post",
+                    body: JSON.stringify([[this.state.name,sc,status]]),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                }
+            );
+            const json = await response.json();
+            console.log("Success:", JSON.stringify(json));
+            // setMessage("Success");
+        } catch (error) {
+            console.error("Error:", error);
+            // setMessage("Error");
+        }
     }
     handleOptionClick = (e) => {
         if(this.state.clicked===false){
@@ -126,11 +160,13 @@ class Play extends Component{
             correctAnswers:state.correctAnswers,
             wrongAnswers:state.wrongAnswers,
             numberOfAnsweredQuestions:state.numberOfAnsweredQuestions,
+            name:state.name
         };
         // console.log(playerStats);
         setTimeout(()=>{
             this.props.history.push("/sudeepthinittala/online-quiz/play/quizSummary",playerStats);
         },1000);
+        this.sendData();
     }
     render(){
         const {currentQuestion}=this.state;

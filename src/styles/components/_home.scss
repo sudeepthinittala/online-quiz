@@ -21,7 +21,7 @@
     }
     .play-button-container{
         margin-top: 15%;
-        width:100%;
+      
     }
     a.play-button{
         background-color: #57b846;
@@ -29,10 +29,11 @@
         border-radius: 30px;
         cursor:pointer;
         padding: 1rem;
-        display: block;
         text-align: center;
+        display: block;
         width:80%;
         transition: 0.3s linear all;
+       margin-left:50px;
     }
     a.play-button:hover{
         background-color: darken($color: #57b846, $amount: 10%);

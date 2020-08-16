@@ -12,13 +12,10 @@ const Home = () => {
                    <h1> Lets Play Quiz! </h1>
                   
                    <div className="play-button-container">
-                       <ul>
-                           <li >
+                       
                                <Link className="play-button" to={{pathname:"/sudeepthinittala/online-quiz/play/instructions/",aboutProps:{text:"User"}}} >
                                    Play
                                </Link>
-                           </li>
-                       </ul>
 
                    </div>
                    <div className="auth-container">
