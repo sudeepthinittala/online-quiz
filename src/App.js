@@ -10,7 +10,7 @@ import Register from './components/Register';
 function App() {
   return (
     <Router>
-      <Route path="/home"  component={Home}/>
+      <Route path="/online-quiz"  component={Home}/>
       <Route path="/play/instructions"  component={QuizInstructions}/>
       <Route path="/play/quiz" component={Play}/>
       <Route path="/play/quizSummary"  component={QuizSummary}/>
