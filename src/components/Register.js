@@ -51,7 +51,7 @@ const Register =()=>{
                 <input type="password" value={retypepassword} onChange={e => retypesetPassword(e.target.value)}name="password" />
             </label>
            
-            <Link to={validateForm()?{ pathname:"/online-quiz/play/instructions/",aboutProps:{text}} : {pathname:"/online-quiz/register"} }   type="submit" value="Send" ><button className="button" onClick={validateForm && sendData}>Submit</button></Link>
+            <Link to={validateForm()?{ pathname:"/play/instructions/",aboutProps:{text}} : {pathname:"/register"} }   type="submit" value="Send" ><button className="button" onClick={validateForm && sendData}>Submit</button></Link>
             </form>
         </Fragment>
     );

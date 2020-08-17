@@ -13,14 +13,14 @@ const Home = () => {
                   
                    <div className="play-button-container">
                        
-                               <Link className="play-button" to={{pathname:"/online-quiz/play/instructions/",aboutProps:{text:"User"}}} >
+                               <Link className="play-button" to={{pathname:"/play/instructions/",aboutProps:{text:"User"}}} >
                                    Play
                                </Link>
 
                    </div>
                    <div className="auth-container">
-                       <Link className="auth-buttons" id="login-button" to="/online-quiz/login">Login</Link>
-                       <Link  className="auth-buttons" id="signup-button" to="/online-quiz/register">Register</Link>
+                       <Link className="auth-buttons" id="login-button" to="/login">Login</Link>
+                       <Link  className="auth-buttons" id="signup-button" to="/register">Register</Link>
                    </div>
                </section>
            </div>
