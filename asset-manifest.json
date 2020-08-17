@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/online-quiz/home/static/css/main.6bc21927.chunk.css",
-    "main.js": "/online-quiz/home/static/js/main.5a34e876.chunk.js",
-    "main.js.map": "/online-quiz/home/static/js/main.5a34e876.chunk.js.map",
+    "main.js": "/online-quiz/home/static/js/main.e3b6def7.chunk.js",
+    "main.js.map": "/online-quiz/home/static/js/main.e3b6def7.chunk.js.map",
     "runtime-main.js": "/online-quiz/home/static/js/runtime-main.66132ac8.js",
     "runtime-main.js.map": "/online-quiz/home/static/js/runtime-main.66132ac8.js.map",
     "static/css/2.90fced29.chunk.css": "/online-quiz/home/static/css/2.90fced29.chunk.css",
     "static/js/2.36dcf902.chunk.js": "/online-quiz/home/static/js/2.36dcf902.chunk.js",
     "static/js/2.36dcf902.chunk.js.map": "/online-quiz/home/static/js/2.36dcf902.chunk.js.map",
     "index.html": "/online-quiz/home/index.html",
-    "precache-manifest.076d7cb1a0a54428380c17883363164a.js": "/online-quiz/home/precache-manifest.076d7cb1a0a54428380c17883363164a.js",
+    "precache-manifest.9604c967bfdb608437229842bccef45c.js": "/online-quiz/home/precache-manifest.9604c967bfdb608437229842bccef45c.js",
     "service-worker.js": "/online-quiz/home/service-worker.js",
     "static/css/2.90fced29.chunk.css.map": "/online-quiz/home/static/css/2.90fced29.chunk.css.map",
     "static/css/main.6bc21927.chunk.css.map": "/online-quiz/home/static/css/main.6bc21927.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.90fced29.chunk.css",
     "static/js/2.36dcf902.chunk.js",
     "static/css/main.6bc21927.chunk.css",
-    "static/js/main.5a34e876.chunk.js"
+    "static/js/main.e3b6def7.chunk.js"
   ]
 }
