@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route } from 'react-router-dom';
+import {BrowserRouter ,Route,Switch } from 'react-router-dom';
 import QuizInstructions from './components/quiz/QuizInstructions';
 import Home from './components/Home';
 import Play from './components/quiz/Play';
@@ -9,14 +9,16 @@ import Register from './components/Register';
 
 function App() {
   return (
-    <Router>
-      <Route path="/online-quiz"  component={Home}/>
-      <Route path="/play/instructions"  component={QuizInstructions}/>
-      <Route path="/play/quiz" component={Play}/>
-      <Route path="/play/quizSummary"  component={QuizSummary}/>
-      <Route path="/login"  component={Login}/>
-      <Route path="/register"  component={Register}/>
-    </Router>
+    <BrowserRouter>
+    <Switch>
+      <Route exact path="/online-quiz"  component={Home}/>
+      <Route exact path="/play/instructions"  component={QuizInstructions}/>
+      <Route exact path="/play/quiz" component={Play}/>
+      <Route exact path="/play/quizSummary"  component={QuizSummary}/>
+      <Route exact path="/login"  component={Login}/>
+      <Route exact path="/register"  component={Register}/>
+    </Switch>
+    </BrowserRouter>
   );
 }
 
